@@ -95,7 +95,7 @@ vendor.gralloc.enable_fb_ubwc=1
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
-drm.service.enabled=true
+drm.service.enabled=false
 
 # Fingerprint
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -146,18 +146,6 @@ ro.vendor.use_data_netmgrd=true \
 persist.data.netmgrd.qos.enable=true \
 persist.vendor.data.mode=concurrent
 
-# Nitz
-PRODUCT_PROPERTY_OVERRIDES += \
-persist.rild.nitz_plmn="" \
-persist.rild.nitz_long_ons_0="" \
-persist.rild.nitz_long_ons_1="" \
-persist.rild.nitz_long_ons_2="" \
-persist.rild.nitz_long_ons_3="" \
-persist.rild.nitz_short_ons_0="" \
-persist.rild.nitz_short_ons_1="" \
-persist.rild.nitz_short_ons_2="" \
-persist.rild.nitz_short_ons_3=""
-
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
 DEVICE_PROVISIONED=1 \
@@ -190,10 +178,6 @@ persist.timed.enable=true
 # Tcp
 PRODUCT_PROPERTY_OVERRIDES += \
 net.tcp.2g_init_rwnd=10
-
-# Usb
-PRODUCT_PROPERTY_OVERRIDES += \
-persist.vendor.usb.config.extra=none
 
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
